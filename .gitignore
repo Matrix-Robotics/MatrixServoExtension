@@ -1,5 +1,9 @@
-# Build Folder
+# vscode config
+.vscode
+
+# build folder
 build
 
-# Vscode Setting
-.vscode
+# test code
+app.ino
+test
