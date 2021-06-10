@@ -18,7 +18,8 @@ bool MatrixServo::begin(uint8_t ver, uint8_t ch){
 	}
 }
 
-float MatrixMotor::getVbat(){
+float MatrixServo::getVbat(){
+	i2cMUXSelect();
 	return i2cReadData(Battery_Voltage)*0.033;
 }
 
