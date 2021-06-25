@@ -2,7 +2,7 @@
 Matrix Servo Extension is a 8 channel RC Servo controller,
 communicate by I2C interface.
 ## Features
-8 channel/360 angle RC Servo control.<br>
+Support 8 channel/360 angle RC Servo control.<br>
 Battery voltage monitor.
 ## Repository Contents
 * [**/docs**](./docs) - Matrix Servo Extension documentation.
