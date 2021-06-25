@@ -1,9 +1,7 @@
 #include "MatrixServoExtension.h"
 
-bool MatrixServo::begin(uint8_t ver, uint8_t ch){
+bool MatrixServo::begin(){
 	Wire.begin();
-	_ver = ver;
-	_ch = ch;
 	i2cMUXSelect();
 	delay(50);
 	if(i2cReadData(Device_ID) == 0x46){

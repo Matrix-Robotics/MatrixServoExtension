@@ -26,7 +26,7 @@ typedef enum __ServoRegType
 
 class MatrixServo{
 private:
-	uint8_t _ch, _ver;
+	uint8_t _ch=0, _ver=1;
 	uint8_t i2cReadData(ServoRegType reg);
   uint8_t _EN1 = 0, _EN2 = 0, _EN3 = 0, _EN4 = 0, _EN5 = 0, _EN6 = 0, _EN7 = 0, _EN8 = 0;
 	void i2cMUXSelect();
@@ -34,7 +34,7 @@ private:
 	void i2cWriteData(ServoRegType reg, uint8_t data);
 public:
 	friend class MiniI2C;
-	bool begin(uint8_t ver=1, uint8_t ch=0);
+	bool begin();
   float getVbat();
 	void ChannelRelease(ServoRegType ch);
 	void setAngle(ServoRegType ch, uint8_t Angle);
