@@ -1,5 +1,5 @@
 # Matrix Servo Extension Arduino Library
-Matrix Servo Extension is a 48 channel RC Servo controller,
+Matrix Servo Extension is a 8 channel RC Servo controller,
 communicate by I2C interface.
 ## Features
 8 channel/360 angle RC Servo control.<br>
