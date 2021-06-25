@@ -1,8 +1,16 @@
-# Matrix Color Sensor Library
-Matrix color sensor library from KKTC.
+# Matrix Servo Extension Arduino Library
+Matrix Servo Extension is a 48 channel RC Servo controller,
+communicate by I2C interface.
+## Features
+8 channel/360 angle RC Servo control.<br>
+Battery voltage monitor.
+## Repository Contents
+* [**/docs**](./docs) - Matrix Servo Extension documentation.
+* [**/examples**](./examples) - Example sketches for the library (.ino). Run these by Arduino IDE.
+* [**/src**](./src) - Source files for the library (.cpp, .h).
 
-Matrix color sensor is an I2C color sensor.
-
-Support RGB, CMYK, and Grayscale format.
-
-Internal 14 colors auto-detect send by number.
+## Documentation
+[Basic Usage](https://matrix-robotics.github.io/MatrixServoExtension/) <br>
+[MATRIX Official Website](https://matrixrobotics.com/)
+## License
+MIT
