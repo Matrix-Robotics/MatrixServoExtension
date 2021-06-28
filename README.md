@@ -10,7 +10,7 @@ Battery voltage monitor.
 * [**/src**](./src) - Source files for the library (.cpp, .h).
 
 ## Documentation
-[Basic Usage](https://matrix-robotics.github.io/MatrixServoExtension/) <br>
+[Function Description](https://matrix-robotics.github.io/MatrixServoExtension/) <br>
 [MATRIX Official Website](https://matrixrobotics.com/)
 ## License
 MIT
