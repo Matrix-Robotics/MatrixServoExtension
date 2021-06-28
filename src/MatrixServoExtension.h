@@ -4,7 +4,9 @@
 #include <Arduino.h>
 #include <Wire.h>
 
+#ifndef ADDR_PCA954X
 #define ADDR_PCA954X 0x70
+#endif
 
 #define MatrixServo_ADDR 0x25
 
