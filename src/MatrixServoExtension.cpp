@@ -21,36 +21,36 @@ float MatrixServo::getVbat(){
 	return i2cReadData(Battery_Voltage)*0.033;
 }
 
-void MatrixServo::setAngle(ServoRegType ch, uint8_t Angle){
+void MatrixServo::setAngle(int ch, uint8_t Angle){
 	i2cMUXSelect();
-	ChannelEN(ch);
-	i2cWriteData(ch, Angle);
+	ChannelEN(ServoRegType(ch+4));
+	i2cWriteData(ServoRegType(ch+4), Angle);
 }
 
-void MatrixServo::ChannelRelease(ServoRegType ch){
+void MatrixServo::ChannelRelease(int ch){
 	switch (ch){
-		case CH1_Angle:
+		case 1:
 			_EN1 = 0; 
 			break;
-		case CH2_Angle:
+		case 2:
 			_EN2 = 0; 
 			break;
-		case CH3_Angle:
+		case 3:
 			_EN3 = 0; 
 			break;
-		case CH4_Angle:
+		case 4:
 			_EN4 = 0; 
 			break;
-		case CH5_Angle:
+		case 5:
 			_EN5 = 0; 
 			break;
-		case CH6_Angle:
+		case 6:
 			_EN6 = 0; 
 			break;
-		case CH7_Angle:
+		case 7:
 			_EN7 = 0; 
 			break;
-		case CH8_Angle:
+		case 8:
 			_EN8 = 0; 
 			break;
 	}

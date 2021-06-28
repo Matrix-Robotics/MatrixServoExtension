@@ -36,8 +36,8 @@ public:
 	friend class MiniI2C;
 	bool begin();
   float getVbat();
-	void ChannelRelease(ServoRegType ch);
-	void setAngle(ServoRegType ch, uint8_t Angle);
+	void ChannelRelease(int ch);
+	void setAngle(int ch, uint8_t Angle);
 };
 
 #endif
