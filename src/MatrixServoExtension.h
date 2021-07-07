@@ -10,24 +10,24 @@
 
 #define MatrixServo_ADDR 0x25
 
-typedef enum __ServoRegType
-{
-  Device_ID = 1,
-  Device_Control_1,
-  Device_Control_2,
-  Battery_Voltage,
-  CH1_Angle,
-  CH2_Angle,
-  CH3_Angle,
-  CH4_Angle,
-  CH5_Angle,
-  CH6_Angle,
-  CH7_Angle,
-  CH8_Angle
-} ServoRegType;
-
 class MatrixServo{
 private:
+  typedef enum __ServoRegType
+  {
+    Device_ID = 1,
+    Device_Control_1,
+    Device_Control_2,
+    Battery_Voltage,
+    CH1_Angle,
+    CH2_Angle,
+    CH3_Angle,
+    CH4_Angle,
+    CH5_Angle,
+    CH6_Angle,
+    CH7_Angle,
+    CH8_Angle
+  } ServoRegType;
+
 	uint8_t _ch=0, _ver=1;
 	uint8_t i2cReadData(ServoRegType reg);
   uint8_t _EN1 = 0, _EN2 = 0, _EN3 = 0, _EN4 = 0, _EN5 = 0, _EN6 = 0, _EN7 = 0, _EN8 = 0;
